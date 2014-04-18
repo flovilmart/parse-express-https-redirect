@@ -1,0 +1,18 @@
+{
+  "name": "parse-express-https-redirect",
+  "version": "0.0.1",
+  "description": "Parse https redirect for local dev env",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flovilmart/parse-express-https-redirect.git"
+  },
+  "author": "Florent Vilmart",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/flovilmart/parse-express-https-redirect/issues"
+  }
+}
