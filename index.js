@@ -1,13 +1,16 @@
+function hostname(req) {
+  if (req.hostname) {
+    return req.hostname;
+  }
+  return req.get('Host');
+}
+
 module.exports = function () {
   return function parseExpressHttpsRedirect(req, res, next) {
-  	//onsole.log(Object.keys(req));
-  	//console.log(req.headers.host);
-  	next();
-
-    /*if (!req.secure) {
-      res.redirect('https://' + req.headers.host + req.originalUrl);
+    if (!req.secure) {
+      res.redirect('https://' + hostname(req) + req.originalUrl);
     } else {
       next();
-    }*/
+    }
   };
 }
